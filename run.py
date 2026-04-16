@@ -14,7 +14,7 @@ def parse_args():
     parser.add_argument("--output",   required=True, help="Path to write metrics JSON")
     parser.add_argument("--log-file", required=True, help="Path to write log file")
     return parser.parse_args()
-
+    
 def setup_logging(log_file: str) -> logging.Logger:
     logger = logging.getLogger("mlops_job")
     logger.setLevel(logging.DEBUG)
